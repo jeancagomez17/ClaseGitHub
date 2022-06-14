@@ -12,8 +12,22 @@ body {
     text-align:left;
     margin:auto;
 }
+#cabecera{
+    background-color: cadetblue;
+    padding:20px;
+    font-weight: bold;
+    font-size: 28px;
+    
+}
+#cabecera #titulo{
+    font-weight:normal;
+    padding:10px;
+    font-size:18px;
+
+}
+
 h1{
-    color:darkcyan;
+    color:black;
 }
 h1:hover{
     color:black;
