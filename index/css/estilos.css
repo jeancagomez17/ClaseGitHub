@@ -13,7 +13,7 @@ body {
     margin:auto;
 }
 #cabecera{
-    background-color: cadetblue;
+    background-color:darkslategrey;
     padding:20px;
     font-weight: bold;
     font-size: 28px;
@@ -38,3 +38,5 @@ p{
     text-align: justify;
     padding:10px 20px;
 }
+
+
