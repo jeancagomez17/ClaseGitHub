@@ -3,7 +3,7 @@
     padding:0;
 }
 body {
-    font-family: Arial;
+    font-family: 'Courier New', Courier, monospace;
 }
 #container{
     width: 70%;
