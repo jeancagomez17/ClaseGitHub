@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+.container{
+    margin:auto;
+    background-color: brown;
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    border-radius:10px;
+}
+.container h2{
+    padding-bottom:10px ;
+    color:beige;
+    text-align: center;
+}
+.cajas { 
+    display: flex;
+    padding:10px ;
+}
+.cajas input{
+    height: 25px;
+    border:2px solid darkgray;
+    border-radius: 5px;
+}
+.cajas input:focus{
+    background-color: darkgray;
+    color:white;
+    transition: 0.4s ease-in;
+    border:2px solid white;
+}
+.cajas input::placeholder{
+    color:darkgray;
+    text-align: center;
+}
+
+
+
+.botons{
+    margin:auto;
+}
+.botons div{
+    
+    padding:10px;
+    
+}
+
+.botons button{
+    background-color: darkgray;
+    border:2px solid white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color:white;
+    border-radius: 5px;
+}
+.botons button:hover{
+    background-color: white;
+    color:darkgray;
+    transition: .4s ease-in;
+}
+
+
+.resultado{
+    padding:10px ;
+}
+.resultado input{
+    width: 100%;
+    height: 25px;
+    border:2px solid darkgray;
+    border-radius: 5px;
+}
+.resultado input::placeholder{
+    color:darkgray;
+}
+.resultado input:disabled{
+    color: darkgray;
+    background-color:white;
+    font-size: 20px;
+    text-align: center;
+}
