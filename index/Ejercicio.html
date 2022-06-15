@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio en clase</title>
+</head>
+<body>
+    <script>
+        function calcular(x,y,fu){
+            let resul = fu(x,y);
+            return resul;
+            
+        }
+
+        let s1 = calcular(10, 5, function(v1,v2){ //funcion anonymous
+            return v1 + v2;
+        })
+        document.write(s1 + "<br>");
+
+        let s2 = calcular(10, 5, function(v1,v2){
+            return v1 - v2;
+        })
+        document.write(s2 + "<br>");
+        //Funciones
+
+        function sumar(v1,v2) {
+            return v1 + v2;
+        }
+
+        function restar(v1,v2) {
+            return v1 - v2;
+        }
+
+        function calc(x,y,fu){
+            let resul = fu(x,y);
+            return resul;
+        }
+        document.write(calc(2,4, sumar) + "<br>"); //crea una variable sumar y despues la variable se convierte en funcion
+
+        //funciones con parametros por defectos
+
+        function sum(x,y, z=0){
+        return x+y+z;
+        }
+        document.write(sum(10,5) + "<br>");
+        document.write(sum(3,4,5) + "<br>");
+
+        //Generando una lista
+        function lista(vec, tipo="<ul>"){
+            let lis = tipo;
+            for(let x=0; x < vec.length; x++ ){
+                lis += `<li> ${vec[x]} </li> `;
+            }
+
+            if(tipo == '<ul>'){
+                lis+= '</ul>';
+            }
+            else{
+                lis+= '</ol>';
+            }
+            return lis;
+
+        }
+        datos = ['Hola', 'Mundo', 'Gomez'];
+        document.write(lista(datos));
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
